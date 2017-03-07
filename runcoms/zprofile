@@ -45,6 +45,11 @@ typeset -gU cdpath fpath mailpath path
 path=(
   /usr/local/{bin,sbin}
   $path
+  $HOME/anaconda/bin
+  $ANDROID_HOME/platform-tools
+  /usr/local/opt/go/libexec/bin
+  /usr/local/bin/yarn global bin
+  $HOME/.fastlane/bin
 )
 
 #

@@ -40,7 +40,9 @@ zstyle ':prezto:load' pmodule \
   'python' \
   'syntax-highlighting' \
   'utility' \
-  'prompt'
+  'prompt' \
+  'fasd' \
+  'aws'
 
 #
 # Autosuggestions

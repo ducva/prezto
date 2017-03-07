@@ -9,3 +9,8 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+
+export ANDROID_HOME=/Users/michael/Library/Android/sdk
+
+export GOPATH=/usr/local/opt/go/libexec
