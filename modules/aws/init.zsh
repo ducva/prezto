@@ -10,10 +10,10 @@
 # if (( ! $+commands[aws] )); then
 #   return 1
 # fi
-
 #
 # Aliases
 #
+export instanceId=i-02a4a2d28755947c3
 alias aws-get-p2='export instanceId=`aws ec2 describe-instances --filters "Name=instance-state-name,Values=stopped,Name=instance-type,Values=p2.xlarge" --query "Reservations[0].Instances[0].InstanceId"` && echo $instanceId'
 
 alias aws-get-t2='export instanceId=`aws ec2 describe-instances --filters "Name=instance-state-name,Values=stopped,Name=instance-type,Values=t2.micro" --query "Reservations[0].Instances[0].InstanceId"` && echo $instanceId'
@@ -22,4 +22,3 @@ alias aws-ip='export instanceIp=`aws ec2 describe-instances --filters "Name=inst
 alias aws-ssh='ssh -i /Users/trang/.ssh/aws-key-fast-ai.pem ubuntu@$instanceIp'
 alias aws-stop='aws ec2 stop-instances --instance-ids $instanceId'
 
-export instanceId=i-9aa9c282
